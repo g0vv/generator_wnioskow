@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+        <meta charset="utf-8">
+        <title>Generator wniosków o premię lub podwyżkę!</title>
+        <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+        
+
+        <script type="text/javascript">
+        window.onload = function() {
+
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0');
+            var yyyy = today.getFullYear();
+
+            today = dd + '.' + mm + '.' + yyyy;
+
+            document.getElementById("jakiDzien").innerHTML = today;
+}
+        </script>
+
+	</head>
+	<body>
+		
+		<div class="book">
+                <div class="page">
+                    <div class="subpage">
+                        <div class="data_right"> 
+                            <h3>Stalowa Wola, dnia: <div id="jakiDzien" class="dzis"></div></h3>
+                        </div>
+                    <div class="tytul"><h1>WNIOSEK O PRZYZNANIE PREMII/PODWYŻKI</h1></div>
+                    <h3 style="text-align: left; margin-top: 10%">Zgodnie z Regulaminem Wynagradzania CERKAMED, proszę o przydzielenie
+                    pracownikowi <textarea class="odreczny" rows="1" cols="90" placeholder=".................................." required></textarea></h3>
+                    
+                        <table>
+                            <tr>
+                                <th>Lp.</th>
+                                <th>     </th>
+                                <th>KWOTA (netto)</th>
+                                <th>Obowiązuje od dnia</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Premia uznaniowa</td>
+                                <td><textarea class="daneTabela" rows="1" maxlength="7" required></textarea></td>
+                                <td><textarea class="daneTabela" rows="1" maxlength="12" required></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Podwyżka</td>
+                                <td><textarea class="daneTabela" rows="1" maxlength="7" required></textarea></td>
+                                <td><textarea class="daneTabela" rows="1" maxlength="12" required></textarea></td>
+                            </tr>
+                        </table>
+                    <h3 style="text-align: left; margin-top: 10%">Uzasadnienie przyznania premii/podwyżki:
+                            <textarea class="odreczny" style="margin-left: auto" rows="5" cols="101" placeholder="...................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................." required></textarea>
+                    </h3>
+                    <h3 style="text-align: left; margin-top: 10%">
+                            <textarea class="daneTabela" style="margin-left: auto" rows="1" cols="30" placeholder="............................." required></textarea></br><p style="margin-left: 5px">Data i podpis wnioskodawcy</p></h3>
+                            <h3 style="text-align: right; margin-top: -75px;">
+                                    <textarea class="daneTabela" style="margin-left: auto" rows="1" cols="30" placeholder="............................." required></textarea></br><p style="margin-right: 40px">Podpis pracodawcy</p></h3>
+                    </div>    
+                </div>
+                
+            </div>
+        
+	</body>
+	
+             
+</html>

@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font: 12pt "Tahoma";
+  }
+  
+  * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  
+  .page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 2cm;
+    margin: 1cm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subpage {
+    border: 5px red solid;
+    height: 256mm;
+    outline: 2cm #FFEAEA solid;
+  }
+  
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  
+  @media print {
+    .page {
+      margin: 0;
+      border: initial;
+      border-radius: initial;
+      width: initial;
+      min-height: initial;
+      box-shadow: initial;
+      background: initial;
+      page-break-after: always;
+    }
+  }
+  input {
+    font: 12pt "Tahoma";
+    border: none;
+  }
+  .data_right {
+    text-align: right;
+  }
+  .dzis {
+      font-family: 'Homemade Apple', cursive;
+      font-size: 18px;
+      color: rgb(33,171,205);
+      display: inline-flex;
+  }
+  h1 {
+      font-size: 18px;
+      font-weight: bold;
+      font-style: italic;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: normal;
+}
+.tytul {
+    text-align: center;
+    margin-top: 15%;
+}
+.odreczny {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 16px;
+  color: rgb(33,171,205);
+  border: none;
+  resize: none;
+}
+table, th, td {
+  border: 1px solid black;
+  padding: 15px;
+  margin: auto;
+  border-collapse: collapse;
+}
+.daneTabela {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 16px;
+  color: rgb(33,171,205);
+  text-align: center;
+}
+textarea {
+  border: none;
+  resize: none;
+}
